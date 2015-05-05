@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+	font-weight: 300;
+	color: #717074;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+#main-header {
+	height: 72px;
+	padding: 21px;
+}
+
+#product-name {
+	position: relative;
+	top: -7px;
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+#main-content {
+	padding: 72px 18px 144px 18px;
+	background-image: url('/business.jpg');
+	background-position: top right;
+	background-size: cover;
+	color: #fff;
+}
+
+.pane {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+
+#title {
+	font-weight: inherit;
+	font-size: 28px;
+}
+
+#crashes {
+	font-size: 144px
+}
+
+#side-pane-content {
+	max-width: 360px;
+}
+
+.button {
+	display: block;
+	height: 41px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 41px;
+	background: #009CDE;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.marketing-copy h4 {
+	font-weight: inherit;
+	font-size: 28px;
+}
+
+.marketing-copy p {
+	font-size: 15px;
+	line-height: 22px;
+	margin: 4px 0 14px 0;
+}
+
+#main-footer {
+	padding: 21px;
+	font-size: 12px;
+}
+
+.bounce {
+	-webkit-animation: bounce 0.25s;
+	-moz-animation: bounce 0.25s;
+	animation: bounce 0.25s;
+	-webkit-transform-origin: center left;
+	-moz-transform-origin: center left;
+	transform-origin: center left;
+}
+
+@media all and (max-width: 680px) {
+	#main-content {
+		padding: 36px 18px;
+		background-image: url('/business-mobile.jpg')
+	}
+
+	.pane {
+		display: block;
+		width: 100%;
+	}
+
+	.pane + .pane {
+		margin-top: 18px;
+	}
+
+	#side-pane-content {
+		max-width: 100%
+	}
+}
+
+@-webkit-keyframes bounce {
+	50% {
+		-webkit-transform: scale(1.2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes bounce {
+	50% {
+		-moz-transform: scale(1.2);
+	}
+	100% {
+		-moz-transform: scale(1);
+	}
+}
+
+@keyframes bounce {
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

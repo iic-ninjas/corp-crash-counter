@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corp Crash Counter</title>
+  <meta name="viewport" content="initial-scale=1">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//www.parsecdn.com/js/parse-1.4.0.min.js"></script>
+  <script src="/index.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div id="logo-wrapper">
+        <img src="/logo.png" id="logo" />
+        <span id="product-name">Corp Crash Counter</span>
+      </div>
+    </div>
+  </header>
+
+  <div id="main-content">
+    <div class="container">
+      <div id="crash-counter" class="pane">
+        <h4 id="title">Crashes since imaging:</h4>
+        <p id="crashes">0</p>
+      </div>
+      <div id="side-pane" class="pane">
+        <div id="side-pane-content">
+          <div id="record-container">
+            <div class="marketing-copy">
+              <h4>
+                Experienced a crash?
+              </h4>
+              <p>
+                Record your crash here and our team of expert technical support will be on case right away!
+              </p>
+            </div>
+            <a href="#" id="record-crash" class="button">Record my crash</a>
+          </div>
+
+          <div id="login-container">
+            <div class="marketing-copy">
+              <h4>
+                Expert crash counting solutions
+              </h4>
+              <p>
+                We provide advanced solutions for counting how many times your laptop crashed since imaging. Sign in now to begin!
+              </p>
+            </div>
+            <a href="#" id="login" class="button">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="container">
+      &copy; 2015 This is completely just for laughs and has nothing to do with Paypal, or anything really..
+    </div>
+  </footer>
+
+
+
+   <script>
+      window.fbAsyncInit = function() {
+        Parse.FacebookUtils.init({
+          appId      : '454089381407487',
+          status     : true, 
+          cookie     : true, 
+          xfbml      : true, 
+          version    : 'v2.2'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>

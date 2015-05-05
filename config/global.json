@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.0"
+  },
+  "applications": {
+    "Corp Crash Counter": {
+      "applicationId": "QiBm2HnPMQX3YGfoEPQ9GH6PY8CVfWjmVjKjSd2a",
+      "masterKey": "8IrTjOL2qEmCcAgaJIk2uw5yPatALuc3iNaWskIL"
+    },
+    "_default": {
+      "link": "Corp Crash Counter"
+    }
+  }
+}
