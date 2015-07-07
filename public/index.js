@@ -3,7 +3,7 @@ var Crashes = {
 	reasons: [],
 	findAll: function(){
 		var query = new Parse.Query(Crash);
-		return query.find().then(function(crashes) {
+		return query.limit(1000).find().then(function(crashes) {
 			Crashes.all = crashes
 			crashes.forEach(function(crash){
 				var reason = crash.get('reason')
